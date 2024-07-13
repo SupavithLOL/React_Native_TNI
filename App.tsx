@@ -3,6 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, Alert } from 'react-native';
 import AppFooter from './components/AppFooter';
 import AppHeader from './components/AppHeader';
+import Content from './components/Content';
 
 export default function App() :React.JSX.Element {
 
@@ -17,9 +18,9 @@ export default function App() :React.JSX.Element {
 
   return (
     <View style={styles.container}>
-      <AppHeader title='This is Header' year={2018}/>
-      <AppHeader title='This is Header2'/>
-      <Text>Hello React!</Text>
+      <AppHeader fname='Supavith Komkham' text='Message from App.tsx'/>
+      <Content/>
+      {/* <Text>Hello React!</Text>
       { 
         users.map((data, index)=>{
           return(
@@ -31,16 +32,10 @@ export default function App() :React.JSX.Element {
         
         )
 
-      }
+      } */}
 
-      <Button 
-        title="Click Me" 
-        onPress={onClickMe}
-        color="blue"
-        // onPress={()=>{Alert.alert('HI','React Native is Fun!')}}
-      />
       
-      <AppFooter/>
+      <AppFooter text='Thai-Nichi Institute of Technology'/>
     </View>
   );
 }
@@ -49,7 +44,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
     justifyContent: 'center',
   },
 });
