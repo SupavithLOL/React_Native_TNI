@@ -8,9 +8,9 @@ export default StyleSheet.create({
       },
     
       profileImage: {
-        borderRadius: 100,
-        width: 125,
-        height: 125,
+        borderRadius: 50,
+        width: 100,
+        height: 100,
         marginRight: 20, //ข้อความห่างกับรูป
     
       },
@@ -31,5 +31,6 @@ export default StyleSheet.create({
         color: 'coral',
         fontStyle: 'italic',
         fontWeight: 'bold'
-      }
+      },
+
 })
