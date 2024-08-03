@@ -20,20 +20,18 @@ export default function App() :React.JSX.Element {
     console.log(`Fullname has changed to: ${fullname}`)
   }, [fullname]);
 
-  useEffect(() => {
-
-  });
+  const handdleButtonClick=()=>{
+    Alert.alert("Helo", `Input your fullname : ${fullname}`);
+  };
 
   return (
     <View style={styles.container}>
       <AppHeader fullname={fullname} text={message} />
 
-      <Content message={message} fullname={fullname} />
-
+      {/* <Content message={message} fullname={fullname} /> */}
+      <Content message={message} onButtonClick = {handdleButtonClick} />
       <AppFooter footerMessage={footerMessage} />
-      <View>
-        <TextInput style={stylesPractice.input} placeholder='Enter your fullname' value={fullname} onChangeText={setFullname}/>
-      </View>
+      <TextInput style={stylesPractice.input} placeholder='Enter your fullname' value={fullname} onChangeText={setFullname}/>
       
 
     </View>
