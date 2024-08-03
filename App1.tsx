@@ -18,8 +18,8 @@ export default function App() :React.JSX.Element {
 
   return (
     <View style={styles.container}>
-      <AppHeader fname='Supavith Komkham' text='Message from App.tsx'/>
-      <Content/>
+      <AppHeader fullname='Supavith Komkham' text='Message from App.tsx'/>
+      <Content message='' fullname=''/>
       {/* <Text>Hello React!</Text>
       { 
         users.map((data, index)=>{
@@ -35,7 +35,7 @@ export default function App() :React.JSX.Element {
       } */}
 
       
-      <AppFooter text='Thai-Nichi Institute of Technology'/>
+      <AppFooter footerMessage='Thai-Nichi Institute of Technology'/>
     </View>
   );
 }

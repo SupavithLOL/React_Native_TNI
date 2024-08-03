@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export default StyleSheet.create({
+const styles = StyleSheet.create({
     container: {
         alignItems: "center",
         padding: 20,
@@ -33,4 +33,77 @@ export default StyleSheet.create({
         fontWeight: 'bold'
       },
 
-})
+  
+
+});
+
+const stylesPractice = StyleSheet.create({
+  container: {
+    // flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 16,
+    backgroundColor: '#ffffff'
+    },
+    
+  header: {
+    backgroundColor: 'pink',
+    padding: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 100,
+    },
+
+    headerText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#fff',
+    },
+
+    subtitleText: {
+    fontSize: 16,
+    color: '#fff',
+    },
+
+    content: {
+      // flex: 1,
+      alignItems: "center",
+      justifyContent: "center",
+    },
+
+    text: {
+      fontSize: 18,
+      marginBottom: 20,
+    },
+
+    footer: {
+      backgroundColor: '#f8f8f8',
+      padding: 20,
+      alignItems: 'center',
+      justifyContent: 'center',
+      position: 'absolute',
+      left: 0,
+      right: 0,
+      bottom: 0,
+      },
+
+      footerText: {
+      fontSize: 16,
+      fontWeight: 'bold',
+      color: '#333',
+      },
+
+      input: {
+        height: 40,
+        borderColor: 'pink',
+        borderWidth: 1,
+        marginTop: 16,
+        paddingHorizontal: 8,
+        width: '80%',
+        borderRadius: 8,
+        marginLeft: 50
+        }
+        
+});
+
+export {styles, stylesPractice};
