@@ -19,7 +19,7 @@ export default function App() :React.JSX.Element {
   return (
     <View style={styles.container}>
       <AppHeader fullname='Supavith Komkham' text='Message from App.tsx'/>
-      <Content message='' fullname=''/>
+      {/* <Content message='' onButtonClick={}/> */}
       {/* <Text>Hello React!</Text>
       { 
         users.map((data, index)=>{
