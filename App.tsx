@@ -6,6 +6,7 @@ import { StyleSheet, Text, View, Button, Alert, TextInput } from "react-native";
 import HomeScreen from "./screens/HomeScreen";
 import AboutScreen from "./screens/AboutScreen";
 import MenuScreen from './screens/MenuScreen';
+import DetailScreen from './screens/DetailScreen';
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -63,7 +64,11 @@ function ProductStackScreen (){
             name="Products"
             component={ProductScreen}
           />
-        </ProductStack.Navigator>
+          <ProductStack.Screen
+            name="Details"
+            component={DetailScreen}
+          />
+     </ProductStack.Navigator>
   )
 }
 
