@@ -3,14 +3,20 @@ import React from "react";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { Header, Icon, ListItem } from "@rneui/base";
 
+import { useAppSelector } from "../redux-toolkit/hook";
+import { selectAuthState } from "../auth/auth-slice";
+
 const MenuScreen = ({ navigation }: any) => {
+
+  const {profile} = useAppSelector(selectAuthState);
+
   return (
     <View>
       <Header
         backgroundImageStyle={{}}
         barStyle="default"
         centerComponent={{
-          text: "Thai-Nichi",
+          text: profile?"Welcome, "+profile.name:"",
           style: { color: "#fff" },
         }}
         centerContainerStyle={{}}
