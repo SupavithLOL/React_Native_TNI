@@ -29,7 +29,7 @@ const MenuScreen = ({ navigation }: any) => {
       />
 
       <>
-        <ListItem bottomDivider onPress={() => {navigation.navigate('HomeStack')}}>
+        <ListItem bottomDivider onPress={() => {navigation.navigate('Home')}}>
           <Icon name="home" type="material-community" color="grey" />
           <ListItem.Content>
             <ListItem.Title>หน้าหลัก</ListItem.Title>
